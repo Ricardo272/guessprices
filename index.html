@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Le Juste Prix</title>
+</head>
+
+<body>
+
+    <h1>Juste Prix - Jeu</h1>
+    <div class="game-container">
+
+
+        <div class="info">
+            <p class="nomObjet">Nom de l'objet : <br> <span id="object-name"></span></p>
+            <p class="prixObjet">Prix : Entre 1 et 100 euros</p>
+        </div>
+
+        <div class="image-container">
+            <img id="object-image-1" src="img/s-l1600 (1).jpg" alt="Crocs grise">
+            <img id="object-image-2" class="hidden" src="img/s-l1600 (2).jpg" alt="Crocs bleu">
+            <img id="object-image-3" class="hidden" src="img/s-l1600 (3).jpg" alt="Crocs verte">
+            <img id="object-image-4" class="hidden" src="img/s-l1600.jpg" alt="Crocs beige">
+            <img id="object-image-5" class="hidden" src="img/12-13-2022-men-view-all-all-terrain.jpg" alt="Crocs Noir">
+        </div>
+
+        <div id="button-soumettre">
+            <input type="number" id="guess" min="1" max="100" placeholder="1 2 3">
+            <button id="submit">Soumettre</button>
+        </div>
+        <p id="message"></p>
+        <p class="essaiesRestant">Tentatives restantes: <span id="attempts">10</span></p>
+    </div>
+    <span class="button-reset">
+        <button id="reset">Retentes Ta Chance</button>
+    </span>
+    <span id="pagination">
+        <div class="pagination">
+            <input class="inputPac" id="dot-1" type="radio" name="dots">
+            <label for="dot-1"></label>
+            <input class="inputPac" id="dot-2" type="radio" name="dots">
+            <label for="dot-2"></label>
+            <input class="inputPac" id="dot-3" type="radio" name="dots" checked="checked">
+            <label for="dot-3"></label>
+            <input class="inputPac" id="dot-4" type="radio" name="dots">
+            <label for="dot-4"></label>
+            <input class="inputPac" id="dot-5" type="radio" name="dots">
+            <label for="dot-5"></label>
+            <input class="inputPac" id="dot-6" type="radio" name="dots">
+            <label for="dot-6"></label>
+            <input class="inputPac" id="dot-7" type="radio" name="dots">
+            <label for="dot-7"></label>
+            <input class="inputPac" id="dot-8" type="radio" name="dots">
+            <label for="dot-8"></label>
+            <div class="pacman"></div>
+        </div>
+    </span>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
